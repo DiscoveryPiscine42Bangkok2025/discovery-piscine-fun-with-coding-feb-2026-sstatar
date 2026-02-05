@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>It’s over 9000</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    form { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    input, select { padding: 8px 10px; font-size: 16px; }
+    input[type="submit"] { cursor: pointer; }
+  </style>
+</head>
+<body>
+  <form id="calc">
+    <input id="left" type="text" placeholder="Left (>= 0)" />
+    <select id="op">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    <input id="right" type="text" placeholder="Right (>= 0)" />
+    <input type="submit" value="Try me!" />
+  </form>
+
+  <script>
+    setInterval(function () {
+      alert("Please, use me...");
+    }, 30000);
+
+    function isPositiveInteger(text) {
+      return /^[0-9]+$/.test(text);
+    }
+
+    document.getElementById("calc").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var leftText = document.getElementById("left").value;
+      var rightText = document.getElementById("right").value;
+      var op = document.getElementById("op").value;
+
+      if (!isPositiveInteger(leftText) || !isPositiveInteger(rightText)) {
+        alert("Error :(");
+        return;
+      }
+
+      var a = Number(leftText);
+      var b = Number(rightText);
+      var result;
+
+      if ((op === "/" || op === "%") && b === 0) {
+        alert("It’s over 9000!");
+        console.log("It’s over 9000!");
+        return;
+      }
+
+      if (op === "+") result = a + b;
+      else if (op === "-") result = a - b;
+      else if (op === "*") result = a * b;
+      else if (op === "/") result = a / b;
+      else if (op === "%") result = a % b;
+
+      alert(result);
+      console.log(result);
+    });
+  </script>
+</body>
+</html>

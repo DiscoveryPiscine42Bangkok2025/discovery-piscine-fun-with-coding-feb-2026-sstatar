@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.p1 {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/001/223/495/large_2x/scenic-view-of-ocean-sunset-free-photo.jpg");
+}
+
+.p2 {
+  background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-1376930-2662116.jpg&fm=jpg");
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.middle {
+  background: black;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  font-size: 22px;
+}
