@@ -1,0 +1,23 @@
+section {
+    scroll-margin-top: 40px;
+    padding: 100px 0;
+}
+.hero {
+    background: linear-gradient(
+        120deg,
+        rgba(13, 110, 253, 0.1),
+        rgba(33, 37, 41, 0.06)
+    );
+}
+.avatar {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+@media (min-width: 768px) {
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - saschatt</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="member2.css" />
+    </head>
+
+    <body>
+        <!-- NAVBAR (fixed, always visible) -->
+        <nav class="navbar navbar-expand-lg bg-white border-bottom fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="#top">saschatt</a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#nav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#showcase">Showcase</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a
+                        class="btn btn-outline-dark ms-lg-3 mt-2 mt-lg-0"
+                        href="./index.html"
+                        >Back</a
+                    >
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO / TOP -->
+        <header id="top" class="hero pt-5">
+            <div class="container pt-5 pb-4">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img
+                            class="avatar img-fluid"
+                            src="member2Picture.jpg"
+                            alt="saschatt photo"
+                        />
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="display-5 fw-bold mb-2">
+                            Sasiporn Chatthongchai
+                        </h1>
+                        <p class="lead text-secondary mb-3">
+                            Computer Science Student • KMITL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-3">About</h2>
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="p-4 border rounded-4 bg-white h-100">
+                            <p class="mb-2">
+                                Hi! I’m <strong>Sasiporn</strong>. Final-year
+                                Computer Science student with a strong
+                                foundation in front-end web development and user
+                                interface design. Experienced in developing
+                                responsive web applications through academic
+                                projects using React.js and Tailwind CSS. Highly
+                                motivated to learn new technologies and apply
+                                technical skills to create user-friendly and
+                                effective digital solutions that support
+                                organizational goals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="p-4 border rounded-4 bg-light h-100">
+                            <h3 class="h5 fw-bold">Quick info</h3>
+                            <ul class="mb-0 text-secondary">
+                                <li>Location: Bangkok, Thailand</li>
+                                <li>Education: KMITL</li>
+                                <li>Interests: Web, UI, Problem Solving</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOWCASE -->
+        <section id="showcase" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Showcase</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white border rounded-4 h-100">
+                            <h3 class="h5 fw-bold">Skills</h3>
+                            <ul class="text-secondary mb-0">
+                                <li>HTML / CSS / React.js / Tailwind CSS</li>
+                                <li>Python / Java / JavaScript / SQL</li>
+                                <li>Git / GitHub / REST APIs / MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white border rounded-4 h-100">
+                            <h3 class="h5 fw-bold">Projects</h3>
+                            <ul class="text-secondary mb-0">
+                                <li>
+                                    SmartJobMatch – AI-Based Job Matching Web
+                                    Application Senior Project | In Progress
+                                </li>
+                                <li>
+                                    BOOGO - Online Subscription Bookstore Web
+                                    Application
+                                </li>
+                                <li>To-Do List Web Application</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white border rounded-4 h-100">
+                            <h3 class="h5 fw-bold">Experience</h3>
+                            <ul class="text-secondary mb-0">
+                                <li>Teamwork & Git workflow</li>
+                                <li>Peer evaluation</li>
+                                <li>Communication & presentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Contact</h2>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <a
+                        class="btn btn-outline-dark"
+                        href="https://github.com/sstatar"
+                        target="_blank"
+                        >GitHub</a
+                    >
+                    <a
+                        class="btn btn-outline-dark"
+                        href="https://www.instagram.com/guizz_sc/"
+                        target="_blank"
+                        >Instagram</a
+                    >
+                </div>
+
+                <hr class="my-4" />
+                <small class="text-secondary">© 2026 saschatt Portfolio</small>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

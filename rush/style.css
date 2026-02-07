@@ -1,0 +1,92 @@
+.first-container {
+    background-color: #d7d7d7;
+    position: relative;
+    overflow: hidden;
+}
+
+.first-container::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    bottom: -20%;
+    left: 52%;
+    width: 80%;
+    background: #000000a8;
+    transform: skewX(-12deg);
+    transform-origin: left;
+    z-index: 0;
+}
+
+.first-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.custom-profile {
+    background-color: #1d1d1d;
+    border-radius: 30px;
+}
+
+.profile p {
+    font-size: 0.9rem;
+}
+
+.big-gap {
+    gap: 2rem;
+}
+
+.first-container-gap {
+    gap: 2rem;
+}
+
+.profile-link {
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+@media (min-width: 768px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .big-gap {
+        gap: 6rem;
+    }
+
+    .first-container-gap {
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+
+    .big-gap {
+        gap: 12rem;
+    }
+
+    .first-container-gap {
+        gap: 4rem;
+    }
+}
+
+.profile {
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.profile-link:hover .profile {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
